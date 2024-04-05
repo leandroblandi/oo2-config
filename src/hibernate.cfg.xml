@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD
+3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">
+	jdbc:mysql://localhost/bd-hibernate-una-entidad?serverTimezone=UTC</property>
+		<property name="connection.username">elebe</property>
+		<property name="connection.password">4250_96Lz29072002 admin</property>
+		<property name="connection.pool_size">1</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">false</property> <!-- en true muestra hql en
+consola-->
+		<!-- Mapeo Entidades -->
+		<mapping resource="mapeos/Cliente.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>
